@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import SuperContextProvider from './Context/SuperContext';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import AdminContextProvider from './Context/AdminContext';
-AdminContextProvider
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let queryClient = new QueryClient();
 root.render(
