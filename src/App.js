@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Login from './Components/Login/Login'
 import Layout from './Components/Layout/Layout'
@@ -71,13 +70,12 @@ function App() {
     if (localStorage.getItem('superAdminToken') !== null) {
       setSuperToken(localStorage.getItem('superAdminToken'));
       setAdminName(localStorage.getItem('supername'));
-    }
-    else if (localStorage.getItem('orgAdminToken') !== null) {
+    } else if (localStorage.getItem('orgAdminToken') !== null) {
       setAdminToken(localStorage.getItem('orgAdminToken'));
       setAdminOrganizationId(localStorage.getItem('adminOrganizationId'));
       setAdminName(localStorage.getItem('adminName'));
     }
-  }, []);
+  }, [setAdminName, setAdminOrganizationId, setAdminToken, setSuperToken]);
   return <RouterProvider router={routers} ></RouterProvider>
 }
 

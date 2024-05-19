@@ -1,8 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import DuckImage from '../../imgs/Duck.png';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import { BsBuildings } from "react-icons/bs";
 import { FaBusAlt } from "react-icons/fa";
 import { GiRoad } from "react-icons/gi";
 import { LuTicket } from "react-icons/lu";
@@ -15,12 +14,6 @@ function VehicleDetailsOrgAdmin() {
     const { setAdminOrganizationId, setAdminName, setAdminToken } = useContext(AdminContext);
     let adminname = localStorage.getItem('adminName');
     const navigate = useNavigate();
-    const token = localStorage.getItem('orgAdminToken');
-    const config = {
-        headers: {
-            Authorization: `Bearer ${token}`
-        }
-    };
     function logout() {
         localStorage.removeItem('orgAdminToken');
         localStorage.removeItem('adminOrganizationId');
@@ -51,7 +44,7 @@ function VehicleDetailsOrgAdmin() {
 
                         <div className='d-flex mt-5'>
                             <div>
-                                <img src={DuckImage} alt="Duck Image" />
+                                <img src={DuckImage} alt="DuckImage" />
                             </div>
                             <div className='align-self-center'>
                                 <h4>Duck UI</h4>

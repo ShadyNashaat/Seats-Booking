@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import DuckImage from '../../imgs/Duck.png';
-import OrgLogo from '../../imgs/OrganizationLogopng.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { MdInsertPhoto } from "react-icons/md";
 import { BsBuildings } from "react-icons/bs";
@@ -115,7 +114,7 @@ function NewOrg() {
                         </div>
                         <div className='d-flex mt-5'>
                             <div>
-                                <img src={DuckImage} alt="Duck Image" />
+                                <img src={DuckImage} alt="Duck-Image" />
                             </div>
                             <div className='align-self-center'>
                                 <h4>Duck UI</h4>

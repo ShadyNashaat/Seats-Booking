@@ -1,8 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import DuckImage from '../../imgs/Duck.png';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import axios from 'axios';
-import { BsBuildings } from "react-icons/bs";
 import { FaBusAlt } from "react-icons/fa";
 import { GiRoad } from "react-icons/gi";
 import { LuTicket } from "react-icons/lu";
@@ -50,7 +49,7 @@ function TripsOrgAdmin() {
 
                         <div className='d-flex mt-5'>
                             <div>
-                                <img src={DuckImage} alt="Duck Image" />
+                                <img src={DuckImage} alt="Duck-Image" />
                             </div>
                             <div className='align-self-center'>
                                 <h4>Duck UI</h4>

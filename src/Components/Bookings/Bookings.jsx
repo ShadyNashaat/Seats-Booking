@@ -3,8 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { SuperContext } from '../../Context/SuperContext';
 import { useQuery } from 'react-query';
 import axios from 'axios';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
 import { BsBuildings } from "react-icons/bs";
 import { FaBusAlt } from "react-icons/fa";
 import { GiRoad } from "react-icons/gi";
@@ -49,7 +47,7 @@ function Bookings() {
 
                         <div className='d-flex mt-5'>
                             <div>
-                                <img src={DuckImage} alt="Duck Image" />
+                                <img src={DuckImage} alt="Duck-Image" />
                             </div>
                             <div className='align-self-center'>
                                 <h4>Duck UI</h4>

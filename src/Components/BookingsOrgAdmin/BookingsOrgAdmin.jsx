@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext} from 'react';
 import DuckImage from '../../imgs/Duck.png';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -42,7 +42,7 @@ function BookingsOrgAdmin() {
 
                         <div className='d-flex mt-5'>
                             <div>
-                                <img src={DuckImage} alt="Duck Image" />
+                                <img src={DuckImage} alt="Duck-Image" />
                             </div>
                             <div className='align-self-center'>
                                 <h4>Duck UI</h4>
