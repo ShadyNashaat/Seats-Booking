@@ -29,7 +29,6 @@ function BookingDetails() {
 
     }
     const { data } = useQuery('getSpecificticket', () => getSpecificticket(params.id));
-    console.log(data?.data.data)
     return <>
         <div className='homeBg container-fluid'>
             <div className='row pb-3'>

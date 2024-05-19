@@ -24,7 +24,6 @@ function Organizations() {
         return axios.get(`https://seated-booking.onrender.com/org/all`, config);
     }
     let { data, isLoading } = useQuery('getallorganizations', getAllOrganizations)
-    console.log(data);
     let navigate = useNavigate();
     let { setSuperToken ,setsuperName} = useContext(SuperContext);
     function logout() {

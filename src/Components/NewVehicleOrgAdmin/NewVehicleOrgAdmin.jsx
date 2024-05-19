@@ -18,6 +18,8 @@ function NewVehicleOrgAdmin() {
     let [isLoading, SetisLoading] = useState(false);
     let [error, seterror] = useState(null);
     let [added, setadded] = useState(null); const navigate = useNavigate();
+
+    
     async function newVehicle(values) {
         SetisLoading(true);
         try {
