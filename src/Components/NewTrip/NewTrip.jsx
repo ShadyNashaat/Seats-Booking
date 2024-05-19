@@ -116,7 +116,7 @@ function NewTrip() {
                         </div>
                         <div className='d-flex mt-5'>
                             <div>
-                                <img src={DuckImage} alt="Duck-Image" />
+                                <img src={DuckImage} alt="Duck" />
                             </div>
                             <div className='align-self-center'>
                                 <h4>Duck UI</h4>
